@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+missingno
+scikit-learn
+imbalanced-learn
+tensorflow
+ipykernel
+ipython
+nbformat
+joblib
