@@ -1,142 +1,156 @@
-📊 Datathon - ONG Passos Mágicos
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Finalizado-green?style=for-the-badge" alt="Status: Finalizado"/>
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11"/>
+  <img src="https://img.shields.io/badge/Bibliotecas-Scikit--learn%20|%20TensorFlow%20|%20Keras%20|%20Streamlit-orange?style=for-the-badge" alt="Bibliotecas"/>
+  <a href="https://youtu.be/6g1-S-4taPg">
+    <img src="https://img.shields.io/badge/🎥%20Assistir%20à%20Apresentação-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Assistir à Apresentação"/>
+  </a>
+</p>
 
-Projeto de análise de dados e modelagem preditiva desenvolvido para o Datathon da ONG Passos Mágicos.
+# 📊 Datathon: ONG Passos Mágicos
 
-O objetivo é apoiar a identificação de alunos com maior necessidade de apoio educacional, utilizando modelos de Machine Learning aplicados a indicadores acadêmicos e sociais.
+Este repositório contém o projeto de **análise de dados e modelagem preditiva** desenvolvido para o Datathon da ONG **Passos Mágicos**.
 
-🚀 Funcionalidades
+O foco central é utilizar **Inteligência Artificial** para identificar alunos que necessitam de maior apoio educacional e social.
 
-O sistema possui duas principais análises:
+---
 
-🔮 Predição de Ponto de Virada
+## 🎯 O Objetivo
 
-Estima a probabilidade de um aluno atingir um ponto de virada em sua trajetória educacional, considerando fatores como:
+O projeto visa apoiar a tomada de decisão da ONG por meio de modelos de Machine Learning aplicados a indicadores acadêmicos e sociais.
 
-desempenho acadêmico
+O sistema atua em duas frentes principais:
 
-situação psicossocial
+- 🔄 **Ponto de Virada**  
+  Identificar momentos de evolução significativa na trajetória do aluno.
 
-continuidade nos estudos
+- 🎓 **Indicação de Bolsa**  
+  Estimar a probabilidade de elegibilidade para apoio financeiro.
 
-vulnerabilidade
+---
 
-necessidade de apoio
+## 📄 Storytelling do Projeto
 
-🎓 Predição de Indicação de Bolsa
+<a href="POSTECH - Fase 5 - Storytelling.pdf">
+    <img src="storytelling_preview.jpg" alt="Storytelling Preview"/>
+</a>
 
-Estima a probabilidade de um aluno ser indicado para receber bolsa de estudos, com base em:
+<br>
 
-desempenho acadêmico
+<a href="POSTECH - Fase 5 - Storytelling.pdf">
+  <img src="https://img.shields.io/badge/📄%20Baixar%20PDF-blue?style=for-the-badge"/>
+</a>
 
-engajamento
+## 🚀 Funcionalidades e Modelos
 
-desenvolvimento educacional
+### 🔮 Predição de Ponto de Virada
+- **Modelo**: Random Forest (`.pkl`)
+- **Fatores analisados**:
+  - Desempenho acadêmico
+  - Situação psicossocial
+  - Continuidade nos estudos
+  - Vulnerabilidade social
 
-permanência nos estudos
+### 🎓 Predição de Indicação de Bolsa
+- **Modelo**: Rede Neural (Keras / TensorFlow)
+- **Fatores analisados**:
+  - Engajamento
+  - Desenvolvimento educacional
+  - Permanência
+  - Contexto social
 
-contexto social
+---
 
-🧠 Modelos utilizados
+## 🖥️ Aplicação Interativa (Streamlit)
 
-Random Forest (Ponto de Virada)
+A aplicação foi desenvolvida utilizando **Streamlit**, permitindo simular cenários e visualizar predições em tempo real de forma simples e intuitiva.
 
-Rede Neural (Keras / TensorFlow) para Indicação de Bolsa
+🔗 **Acesse a aplicação online:**
 
-Os modelos já estão treinados e salvos no repositório (.pkl), não sendo necessário novo treinamento para execução do sistema.
+<a href="https://datathon-fiap-paapps-magicos-gap5ickukarcqyvoge7gpe.streamlit.app/">
+  <img src="https://img.shields.io/badge/🚀%20Acessar%20App%20Streamlit-green?style=for-the-badge&logo=streamlit&logoColor=white"/>
+</a>
 
-🖥️ Interface
+---
 
-O projeto possui uma interface interativa construída com Streamlit, permitindo a simulação de cenários a partir da entrada de indicadores.
+### 💡 O que você pode fazer no App
 
-⚙️ Configuração do Ambiente
-🐍 Versão do Python (IMPORTANTE)
+- 🔮 Simular o **Ponto de Virada** de alunos  
+- 🎓 Avaliar a **probabilidade de Indicação de Bolsa**  
+- 📊 Explorar variáveis educacionais e sociais  
+- ⚡ Obter predições em tempo real  
 
-O projeto foi desenvolvido utilizando:
+---
 
-Python 3.11
+> 💡 **Dica:** Para melhor experiência, utilize o app em tela cheia e insira diferentes cenários para explorar o comportamento dos modelos.
 
-Versões mais recentes (como 3.12, 3.13 ou 3.14) podem causar falhas, principalmente na instalação do TensorFlow.
+## 🚀 Instalação
 
-▶️ Como executar o projeto
-1. Criar ambiente virtual
-python -m venv venv
-2. Ativar ambiente
+> 💡 Recomendado: utilize um ambiente virtual (`venv`) para garantir o isolamento das dependências.
 
-Windows:
+## 📓 Dependências para análise e treinamento (opcional)
 
-venv\Scripts\activate
-3. Instalar dependências
+Para executar os notebooks de análise exploratória e treinamento dos modelos, é necessário instalar dependências adicionais:
+
+```bash
+pip install plotly seaborn missingno imbalanced-learn ipykernel ipython nbformat
+```
+
+### 1. Clone o repositório
+
+```bash
+git clone --branch main https://github.com/Carllux/datathon-fiap-passos-magicos.git
+cd datathon-fiap-passos-magicos
+```
+
+### 2. Crie o ambiente virtual
+
+```bash
+python -m venv .venv
+```
+
+### 3. Ative o ambiente virtual
+
+- **Windows**:
+  ```bash
+  .\.venv\Scripts\activate
+  ```
+
+- **Linux/macOS**:
+  ```bash
+  source .venv/bin/activate
+  ```
+
+### 4. Instale as dependências
+
+```bash
 pip install -r requirements.txt
-4. Executar aplicação
+```
+
+### 5. Execução
+
+```bash
 streamlit run Inicio.py
+```
 
-A aplicação será aberta no navegador.
 
-📓 Notebooks
+---
 
-Os notebooks utilizados no projeto estão disponíveis em:
+### 🛠️ Estratégia de Desenvolvimento
 
-notebooks/
+### 1. Notebooks e Análise
 
-Eles incluem:
+Os notebooks em `/notebooks` cobrem todo o pipeline:
 
-análise exploratória dos dados
+- Análise Exploratória de Dados (EDA)
+- Tratamento e limpeza
+- Engenharia de atributos
+- Treinamento e validação
 
-tratamento e preparação
+---
 
-treinamento dos modelos
+### 2. Modelagem
 
-⚠️ Requisitos adicionais para notebooks
-
-Para executar os notebooks, instale também:
-
-pip install notebook seaborn plotly missingno imbalanced-learn ipykernel
-📂 Estrutura do projeto
-.
-├── Inicio.py
-├── pages/
-├── notebooks/
-├── output/
-├── *.pkl
-├── requirements.txt
-└── README.md
-📂 Dados
-
-As bases originais utilizadas no projeto não estão incluídas no repositório devido ao tamanho.
-
-O projeto utiliza apenas:
-
-dados tratados
-
-modelos treinados
-
-arquivos necessários para execução da aplicação
-
-❗ Observações importantes
-
-Os modelos já estão treinados
-
-Não é necessário executar os notebooks para usar o sistema
-
-O app funciona de forma independente
-
-Caso queiram consultar o material usado para tratar as bases e treinar o modelo, segue o link: https://drive.google.com/file/d/1eCrv9xa3WHOgo6l4GNYQ24CVN_Z5To87/view
-
-⚠️ Problemas comuns
-TensorFlow não instala
-
-Verifique se está usando Python 3.11
-
-Erros ao rodar notebooks
-
-Instale as dependências adicionais indicadas acima
-
-✅ Objetivo do projeto
-
-O projeto busca apoiar a tomada de decisão com base em dados, utilizando modelos preditivos para identificar padrões e auxiliar na priorização de alunos com maior necessidade de acompanhamento.
-
-As previsões geradas não substituem a análise humana, mas funcionam como suporte à decisão.
-
-👨‍💻 Autor
-
-Projeto desenvolvido por Diego Oliveira
+- Modelo baseado em **Random Forest** para classificação tabular
+- Modelo de **Deep Learning** para capturar padrões complexos
+- Uso de dados educacionais + sociais
